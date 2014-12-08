@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--/**
+ * Mini Compare Header
+ * Author: Razorphyn
+ * Suport Email: est.garndi@gmail.com
+ * Copyright: WTFPL(http://www.wtfpl.net/)
+**/-->
+<config>
+  <modules>
+    <Razorphyn_Minicompare>
+      <version>0.1.0</version>
+    </Razorphyn_Minicompare>
+  </modules>
+  <global>
+    <blocks>
+      <minicompare>
+        <class>Razorphyn_Minicompare_Block</class>
+      </minicompare>
+    </blocks>
+  </global>
+  <frontend>
+    <layout>
+        <updates>
+            <minicompare>
+                <file>minicompare.xml</file>
+            </minicompare>
+        </updates>
+    </layout>
+  </frontend>
+</config>

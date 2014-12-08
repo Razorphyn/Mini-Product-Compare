@@ -1,0 +1,19 @@
+<?php 
+/**
+ * Mini Compare Header
+ * Author: Razorphyn
+ * Suport Email: est.garndi@gmail.com
+ * Copyright: WTFPL(http://www.wtfpl.net/)
+**/
+?>
+<?php
+	$_helper = $this->helper('catalog/product_compare');
+?>
+<li id="minicompare">
+  <div id="minicompare-link">
+    <?php printf('<a href="#" >%s: %d</a>', $this->__('Compare Products'), $_helper->getItemCount()) ?>
+  </div>
+  <div id="minicompare-panel" style="display:none;">
+    <?php echo $this->getChildHtml('topcompare'); ?>
+  </div>
+</li>
