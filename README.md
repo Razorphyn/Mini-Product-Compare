@@ -16,7 +16,12 @@ Edit or create a file named **local.xml** inside **/app/design/frontend/<your th
 ```xml
 <layout version="0.1.0">
    <default>
-      <remove name="catalog.compare.sidebar"/> 
+      <reference name="right">
+         <remove name="catalog.compare.sidebar"/> 
+      </reference>
+      <reference name="left">
+         <remove name="catalog.compare.sidebar"/> 
+      </reference>
    </default>
 </layout>
 ```
