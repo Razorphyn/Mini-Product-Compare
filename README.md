@@ -11,23 +11,21 @@ Basically is the same concept behind the Mini cart solution, but applied to the 
 4. Clean the cache
 
 ####DISBALE PRODUCT COMPARE BLOCK ON ALL PAGES
-Edit or create a file named **local.xml** inside **/app/design/frontend/<your theme>/default/layout/**
+The default behaviour of this extension is to disable left and right sidebar compare products block.
+To revert this setting open **/app/design/frontend/<your theme>/default/layout/minicompare.xml** and comment these lines:
 
 ```xml
-<layout version="0.1.0">
-   <default>
-      <reference name="right">
-         <action method="unsetChild">
-            <name>catalog.compare.sidebar</name>
-         </action>
-		</reference>
-		<reference name="left">
-         <action method="unsetChild">
-            <name>catalog.compare.sidebar</name>
-         </action>
-      </reference>
-   </default>
-</layout>
+<!-- Disable compare product block on left and right sidebar -->
+<reference name="right">
+	<action method="unsetChild">
+		<name>catalog.compare.sidebar</name>
+	</action>
+	</reference>
+<reference name="left">
+	<action method="unsetChild">
+		<name>catalog.compare.sidebar</name>
+	</action>
+</reference>
 ```
 
 ####DISABLE MODULE

@@ -7,10 +7,25 @@
 **/-->
 <layout version="0.1.0">
 	<default>
+		<!-- Add Compare product js and css -->
 		<reference name="head">
 			<action method="addItem"><type>skin_js</type><name>js/razorphyn/minicompare.js</name><params/></action>
 			<action method="addCss"><stylesheet>css/razorphyn/minicompare.css</stylesheet></action>
 		</reference>
+		
+		<!-- Disable compare product block on left and right sidebar -->
+		<reference name="right">
+			<action method="unsetChild">
+				<name>catalog.compare.sidebar</name>
+			</action>
+		</reference>
+		<reference name="left">
+			<action method="unsetChild">
+				<name>catalog.compare.sidebar</name>
+			</action>
+		</reference>
+		
+		<!-- Add Compare product block to top links -->
 		<reference name="header">
 			<reference name="top.links">
                 <block type="minicompare/view" name="minicompare_toplink" template="minicompare/toplink.phtml" >
@@ -19,5 +34,6 @@
 				<action method="addLinkBlock"><blockName>minicompare_toplink</blockName></action>
             </reference>
 		</reference>
+		
 	</default>
 </layout>
