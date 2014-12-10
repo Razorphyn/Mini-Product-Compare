@@ -1,4 +1,0 @@
-#minicompare { float: left; position: relative;}
-#minicompare-link { overflow: hidden; text-align: right; }
-#minicompare-panel { width: 250px; position: absolute; right: 0; text-align: left; z-index: 10;}
-#minicompare-panel .block-title { display: none }
