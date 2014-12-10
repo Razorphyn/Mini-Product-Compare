@@ -17,10 +17,14 @@ Edit or create a file named **local.xml** inside **/app/design/frontend/<your th
 <layout version="0.1.0">
    <default>
       <reference name="right">
-         <remove name="catalog.compare.sidebar"/> 
-      </reference>
-      <reference name="left">
-         <remove name="catalog.compare.sidebar"/> 
+         <action method="unsetChild">
+            <name>catalog.compare.sidebar</name>
+         </action>
+		</reference>
+		<reference name="left">
+         <action method="unsetChild">
+            <name>catalog.compare.sidebar</name>
+         </action>
       </reference>
    </default>
 </layout>
