@@ -1,6 +1,8 @@
 Mini Product Compare
 ====================
 
+Tested on Magento CE 1.9.1
+
 Move product compare block to header links, mouseover the link to show the block
 Basically is the same concept behind the Mini cart solution, but applied to the product comapre block
 
