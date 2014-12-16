@@ -9,8 +9,9 @@ Basically is the same concept behind the Mini cart solution, but applied to the 
 ####INSTALLATION
 1. Unzip the files 
 2. If necessary rename **app/design/frontend/default** and  **skin/frontend/default** folders to your theme folder name
-3. Upload the files inside the magento root folder
-4. Clean the cache
+3. Disable Compilation if enabled (*System*->*Tools*->*Compilation*)
+4. Upload the files inside the magento root folder
+5. Clean the cache
 
 ####DISBALE PRODUCT COMPARE BLOCK ON ALL PAGES
 The default behaviour of this extension is to disable left and right sidebar compare products block.
